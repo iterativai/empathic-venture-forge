@@ -3,24 +3,24 @@ import { ArrowRight, Sparkles, Heart, Brain } from "lucide-react";
 
 const Hero = () => {
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden px-4 py-20">
+    <section className="relative min-h-screen flex items-center justify-center overflow-hidden px-4 sm:px-6 lg:px-8 py-20">
       {/* Animated Background Elements */}
-      <div className="absolute inset-0 overflow-hidden">
-        <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-primary/20 rounded-full blur-3xl animate-pulse-glow" />
-        <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-warm-accent/20 rounded-full blur-3xl animate-pulse-glow" style={{ animationDelay: '1.5s' }} />
-        <div className="absolute top-1/2 left-1/2 w-96 h-96 bg-success/10 rounded-full blur-3xl animate-pulse-glow" style={{ animationDelay: '3s' }} />
+      <div className="absolute inset-0 overflow-hidden pointer-events-none">
+        <div className="absolute top-1/4 left-1/4 w-72 h-72 md:w-96 md:h-96 bg-primary/20 rounded-full blur-3xl animate-pulse-glow" />
+        <div className="absolute bottom-1/4 right-1/4 w-72 h-72 md:w-96 md:h-96 bg-warm-accent/20 rounded-full blur-3xl animate-pulse-glow" style={{ animationDelay: '1.5s' }} />
+        <div className="absolute top-1/2 left-1/2 w-72 h-72 md:w-96 md:h-96 bg-success/10 rounded-full blur-3xl animate-pulse-glow" style={{ animationDelay: '3s' }} />
       </div>
 
       {/* Content */}
       <div className="relative z-10 max-w-6xl mx-auto text-center">
         {/* Badge */}
-        <div className="inline-flex items-center gap-2 px-4 py-2 mb-8 glass rounded-full">
-          <Sparkles className="w-4 h-4 text-primary" />
+        <div className="inline-flex items-center gap-2 px-4 py-2 mb-6 md:mb-8 glass rounded-full elevation-2 transition-all duration-smooth hover:elevation-3">
+          <Sparkles className="w-4 h-4 text-primary animate-pulse" aria-hidden="true" />
           <span className="text-sm font-medium">Human-AI Partnership Platform v4.0</span>
         </div>
 
         {/* Main Heading */}
-        <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold mb-6 leading-tight">
+        <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-bold mb-6 leading-tight tracking-tight">
           Beyond AI Assistance.
           <br />
           <span className="gradient-text-primary">True Partnership.</span>
