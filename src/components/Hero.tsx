@@ -53,16 +53,20 @@ const Hero = () => {
           <Button 
             size="lg" 
             className="bg-primary hover:bg-primary/90 text-primary-foreground shadow-lg hover:shadow-xl transition-all group"
+            asChild
           >
-            Get Early Access
-            <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
+            <a href="/auth">
+              Get Early Access
+              <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
+            </a>
           </Button>
           <Button 
             size="lg" 
             variant="outline"
             className="glass-strong border-border hover:border-primary/50 transition-all"
+            asChild
           >
-            Watch Demo
+            <a href="#features">Watch Demo</a>
           </Button>
         </div>
 

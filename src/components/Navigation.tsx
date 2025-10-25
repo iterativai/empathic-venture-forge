@@ -35,11 +35,11 @@ const Navigation = () => {
 
           {/* CTA Buttons */}
           <div className="hidden md:flex items-center gap-4">
-            <Button variant="ghost" size="sm" className="text-sm">
-              Sign In
+            <Button variant="ghost" size="sm" className="text-sm" asChild>
+              <a href="/auth">Sign In</a>
             </Button>
-            <Button size="sm" className="bg-primary hover:bg-primary/90 text-primary-foreground">
-              Get Started
+            <Button size="sm" className="bg-primary hover:bg-primary/90 text-primary-foreground" asChild>
+              <a href="/auth">Get Started</a>
             </Button>
           </div>
 
