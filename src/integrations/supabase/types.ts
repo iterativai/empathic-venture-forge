@@ -84,6 +84,66 @@ export type Database = {
           },
         ]
       }
+      business_plan_analyses: {
+        Row: {
+          created_at: string
+          dimensional_scores: Json | null
+          file_name: string
+          file_path: string
+          file_size: number
+          file_type: string
+          financial_analysis: Json | null
+          full_report: Json | null
+          gaps: Json | null
+          id: string
+          market_analysis: Json | null
+          overall_score: number | null
+          recommendations: Json | null
+          status: string
+          strengths: Json | null
+          updated_at: string
+          user_id: string
+        }
+        Insert: {
+          created_at?: string
+          dimensional_scores?: Json | null
+          file_name: string
+          file_path: string
+          file_size: number
+          file_type: string
+          financial_analysis?: Json | null
+          full_report?: Json | null
+          gaps?: Json | null
+          id?: string
+          market_analysis?: Json | null
+          overall_score?: number | null
+          recommendations?: Json | null
+          status?: string
+          strengths?: Json | null
+          updated_at?: string
+          user_id: string
+        }
+        Update: {
+          created_at?: string
+          dimensional_scores?: Json | null
+          file_name?: string
+          file_path?: string
+          file_size?: number
+          file_type?: string
+          financial_analysis?: Json | null
+          full_report?: Json | null
+          gaps?: Json | null
+          id?: string
+          market_analysis?: Json | null
+          overall_score?: number | null
+          recommendations?: Json | null
+          status?: string
+          strengths?: Json | null
+          updated_at?: string
+          user_id?: string
+        }
+        Relationships: []
+      }
       profiles: {
         Row: {
           company_name: string | null
