@@ -11,6 +11,7 @@ import Dashboard from "./pages/Dashboard";
 import AgentChat from "./pages/AgentChat";
 import BusinessPlanUpload from "./pages/BusinessPlanUpload";
 import BusinessPlanAnalysis from "./pages/BusinessPlanAnalysis";
+import DocumentsHub from "./pages/DocumentsHub";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -29,6 +30,7 @@ const App = () => (
             <Route path="/agents/:agentType" element={<ProtectedRoute><AgentChat /></ProtectedRoute>} />
             <Route path="/business-plan-upload" element={<ProtectedRoute><BusinessPlanUpload /></ProtectedRoute>} />
             <Route path="/business-plan-analysis/:id" element={<ProtectedRoute><BusinessPlanAnalysis /></ProtectedRoute>} />
+            <Route path="/documents" element={<ProtectedRoute><DocumentsHub /></ProtectedRoute>} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />
           </Routes>

@@ -25,6 +25,9 @@ const Navigation = () => {
             <a href="#features" className="text-sm font-medium hover:text-primary transition-colors">
               Features
             </a>
+            <a href="/documents" className="text-sm font-medium hover:text-primary transition-colors">
+              Documents Hub
+            </a>
             <a href="#platform" className="text-sm font-medium hover:text-primary transition-colors">
               Platform
             </a>
@@ -32,7 +35,6 @@ const Navigation = () => {
               About
             </a>
           </div>
-
           {/* CTA Buttons */}
           <div className="hidden md:flex items-center gap-4">
             <Button variant="ghost" size="sm" className="text-sm" asChild>
